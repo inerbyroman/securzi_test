@@ -1,0 +1,259 @@
+.backScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.modalBlock {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  min-width: 200px;
+  min-height: 200px;
+
+  transform: translateX(-50%) translateY(-50%);
+  background: #ffffff;
+  box-shadow: 0px 2px 70px rgba(64, 101, 133, 0.07);
+  border-radius: 40px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: -46px;
+}
+
+.modalTabs {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 31px;
+}
+
+.modalTab {
+  width: 300px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+  color: #787f84;
+  border-bottom: 1px solid #eef6fd;
+  &__active {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    border: none;
+    color: #0a88dd;
+    border-bottom: 2px solid #0a88dd;
+    box-shadow: 0px 4px 10px -10px rgba(10, 136, 221, 0.29);
+  }
+}
+h4 {
+  margin-top: 26px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0a88dd;
+}
+
+p {
+  //   margin: 0 0 56px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  color: #5c6266;
+}
+.list {
+  padding: 0 40px;
+}
+
+.modal-form {
+  padding-top: 18px;
+  margin: 0 40px 50px;
+  border-top: 1px solid #eef6fd;
+  form {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    input {
+      padding-left: 24px;
+      width: 100%;
+      border: 1px solid #bdcfde;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+
+      color: #353c41;
+    }
+  }
+  &__hint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    p {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: #353c41;
+      margin: 0;
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      p {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #0a88dd;
+      }
+    }
+  }
+}
+.hitModal {
+  padding: 40px;
+}
+.buttonBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input input {
+  width: 388px;
+  height: 64px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #353c41;
+  margin-bottom: 30px;
+  border: none;
+  padding-left: 24px;
+  margin-right: 24px;
+}
+
+.modalSolve {
+  height: 600px;
+  overflow: scroll;
+  padding: 0;
+  li {
+    display: flex;
+    margin: 0 30px;
+    padding: 16px 30px;
+    p {
+      text-align: left;
+      width: 80%;
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #353c41;
+    }
+    span {
+      margin: auto;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #353c41;
+    }
+    &:nth-child(2n) {
+      background-color: rgba(248, 248, 248, 1);
+    }
+  }
+}
+li.firstLi p,
+li.firstLi span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  color: #b4b9bc;
+}
+
+.modalFile {
+  padding: 8px 40px 27px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+
+  a {
+    text-decoration: none;
+    color: #0a88dd;
+  }
+  svg {
+    margin-right: 16px;
+  }
+}
+
+.correctModal {
+  padding: 0 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    margin-top: 20px;
+    button {
+      border: none;
+    }
+  }
+}
+
+.scoreboard-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.scoreboard-form svg {
+  position: absolute;
+  left: 388px;
+  top: 23px;
+}
+
+.scoreboard-form input {
+  width: 430px;
+  height: 64px;
+  border: 1px solid #bdcfde;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 50px;
+  color: #353c41;
+  box-sizing: border-box;
+}
+
+.scoreboard-form button {
+  width: 140px;
+  text-align: center;
+  padding: 22px 0;
+}
+
+h3 {
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #353c41;
+}

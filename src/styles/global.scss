@@ -1,0 +1,64 @@
+.container {
+  width: 1370px;
+  margin: 0 auto;
+}
+
+.LabsCards-block {
+  transform: translateY(-115px);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.challenge-block {
+  transform: translateY(-115px);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.moreButton {
+  width: 226px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 2px 40px rgba(64, 101, 133, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: none;
+  margin: 0 auto 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0a88dd;
+}
+
+.blue-button {
+  padding: 23px 54px;
+  background: #0a88dd;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+.white-button {
+  border: 1px solid rgba(10, 136, 221, 0.5);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #0a88dd;
+  padding: 23px 54px;
+  background-color: white;
+}

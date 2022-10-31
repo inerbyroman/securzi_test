@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Labs from "./route/Labs";
+import TeamChallenge from "./route/TeamChallenge";
+import LabContextProvider from "./components/context/LabContext";
+import Modal from "./components/modal/Modal";
+import ScoreboardPage from "./route/ScoreboardPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LabContextProvider>
+      <Modal />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/labs" element={<Labs />} />
+          <Route path="/labs/:id" element={<TeamChallenge />} />
+          <Route path="/scoreboard" element={<ScoreboardPage />} />
+        </Routes>
+      </BrowserRouter>
+    </LabContextProvider>
   );
 }
 

@@ -1,0 +1,35 @@
+.LabsCard {
+  width: 380px;
+  height: 292px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 2px 70px rgba(64, 101, 133, 0.07);
+  border-radius: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  h4 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #0a88dd;
+  }
+  &:hover {
+    h4 {
+      color: black;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color: #5c6266;
+    margin-bottom: 50px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0a88dd;
+  }
+}

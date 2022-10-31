@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+}
+
+.user-photo {
+  width: 39px;
+  height: 39px;
+  background-color: transparent;
+}
+
+.user-photo img {
+  width: 100%;
+}
+
+.scoreboard-table {
+  padding: 0;
+  width: 1370px;
+  margin: -112px auto 0;
+}
+.scoreboard-table ul {
+  padding: 0;
+}
+.scoreboard-table li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 70px rgba(64, 101, 133, 0.07);
+  margin: 0;
+}
+
+.scoreboard-table li:nth-child(2n) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.scoreboard-table span {
+  width: 10%;
+}
+
+.scoreboard-table p,
+.scoreboard-table .user {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.scoreboard-table .user img {
+  width: 39px;
+}
+
+.scoreboard-table li:first-child {
+  border-radius: 20px 20px 0 0;
+  padding: 20px 0;
+}
+.scoreboard-table li:last-child {
+  border-radius: 0 0 20px 20px;
+}
